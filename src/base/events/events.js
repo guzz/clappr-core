@@ -454,6 +454,31 @@ Events.PLAYBACK_LEVEL_SWITCH_START = 'playback:levels:switch:start'
 Events.PLAYBACK_LEVEL_SWITCH_END = 'playback:levels:switch:end'
 
 /**
+ * Fired when the playback has its audio tracks
+ *
+ * @event PLAYBACK_AUDIO_TRACKS_AVAILABLE
+ * @param {Array} audioTracks
+ * the ordered audio tracks
+ * @param {Number} initial
+ * the initial audio track otherwise -1 (AUTO)
+ */
+ Events.PLAYBACK_AUDIO_TRACKS_AVAILABLE = 'playback:audiotrack:available'
+ /**
+  * Fired when the playback starts to switch audio track
+  *
+  * @event PLAYBACK_AUDIO_TRACK_SWITCH_START
+  *
+  */
+ Events.PLAYBACK_AUDIO_TRACK_SWITCH_START = 'playback:audiotrack:switch:start'
+ /**
+  * Fired when the playback ends the audio track switch
+  *
+  * @event PLAYBACK_AUDIO_TRACK_SWITCH_END
+  *
+  */
+ Events.PLAYBACK_AUDIO_TRACK_SWITCH_END = 'playback:audiotrack:switch:end'
+
+/**
  * Fired when playback internal state changes
  *
  * @event PLAYBACK_PLAYBACKSTATE
