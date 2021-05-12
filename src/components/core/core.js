@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-import { isNumber, Fullscreen, DomRecycler } from '@/utils'
+import { isNumber, Fullscreen, DomRecycler, isMobile } from '@/utils'
 
 import Styler from '@/base/styler'
 import Events from '@/base/events'
@@ -26,6 +26,10 @@ import ResetStyle from './public/optional_reset.scss'
  * @module components
  */
 export default class Core extends UIObject {
+  get isMobile() {
+    return isMobile()
+  }
+
   get events() {
     return {
       'webkitfullscreenchange': 'handleFullscreenChange',
