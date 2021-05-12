@@ -8,7 +8,7 @@ Clappr is under development but production-ready. Feel free to open issues and s
 
 <p>
   <a href="https://badge.fury.io/js/%40clappr%2Fcore"><img src="https://badge.fury.io/js/%40clappr%2Fcore.svg"></a>
-  <a href="https://bundlephobia.com/result?p=@clappr/core@latest"><img src="https://img.shields.io/bundlephobia/min/@clappr/core"></a>
+  <a href="https://bundlephobia.com/result?p=@guzzj/clappr-core@latest"><img src="https://img.shields.io/bundlephobia/min/@guzzj/clappr-core"></a>
   <a href="https://travis-ci.org/clappr/clappr-core"><img src="https://travis-ci.org/clappr/clappr-core.svg?branch=master"></a>
   <a href="https://coveralls.io/github/clappr/clappr-core?branch=master"><img src="https://coveralls.io/repos/github/clappr/clappr-core/badge.svg?branch=master"></a>
   <a href="https://github.com/clappr/clappr-core/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-blue.svg"></a>
@@ -46,7 +46,7 @@ Clappr is under development but production-ready. Feel free to open issues and s
 Add the following script on your HTML:
 ```html
 <head>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/core@latest/dist/clappr-core.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@guzzj/clappr-core@latest/dist/clappr-core.min.js"></script>
 </head>
 ```
 
@@ -67,9 +67,9 @@ Now, create the player:
 
 ### Via npm module:
 
-The project is on npm at https://www.npmjs.com/package/@clappr/core
+The project is on npm at https://www.npmjs.com/package/@guzzj/clappr-core
 
-`yarn install @clappr/core --save-dev`
+`yarn install @guzzj/clappr-core --save-dev`
 
 You should specify the base URL for where the assets are located using the `baseUrl` option:
 ```javascript
@@ -87,8 +87,8 @@ By default, webpack will look at the `main` field in `package.json` and use the 
 If you would like to build Clappr yourself into your project during your build process then add the following to your webpack config:
 ```javascript
 resolve: {
-    alias: { Clappr: '@clappr/core/src/main.js' },
-    root: [path.resolve(__dirname, 'node_modules/@clappr/core/src')],
+    alias: { Clappr: '@guzzj/clappr-core/src/main.js' },
+    root: [path.resolve(__dirname, 'node_modules/@guzzj/clappr-core/src')],
     extensions: ['', '.js'],
 }
 ```
